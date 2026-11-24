@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Willa Oliwka - pensjonat w Chłapowie, 250 m od morza</title>
+<meta name="description" content="Willa Oliwka w Chłapowie: pokoje 2, 3 i 4-osobowe z łazienkami i balkonem, 250 m od morza, przy Jarze Chłapowskim. Aneks kuchenny, ogród, parking, pobyt z psem.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#24603F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2324603F'/%3E%3Cpath d='M14 46C24 30 38 20 52 16' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Cpath d='M30 30c-2-9 4-15 12-16-1 8-5 14-12 16z' fill='%23B9C24A'/%3E%3Cellipse cx='24' cy='42' rx='6' ry='8' transform='rotate(-30 24 42)' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/lora-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/manrope-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/dom-1400.webp" imagesrcset="img/dom-600.webp 600w, img/dom-900.webp 900w, img/dom-1400.webp 1400w, img/dom-2000.webp 2000w" imagesizes="(min-width:960px) 56vw, 100vw" fetchpriority="high">
+<style>
+@font-face{font-family:"Lora";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/lora-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Lora";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/lora-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/manrope-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B2,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/manrope-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Lora-fb";src:local("Georgia");size-adjust:104%;ascent-override:88%;descent-override:24%;line-gap-override:0%}
+:root{
+  --zielen:#24603F;      /* napis "oliwka" z elewacji */
+  --zielen-c:#163A28;    /* ciemna sekcja */
+  --oliwka:#1E444F;      /* owoc oliwki z logo */
+  --limonka:#B9C24A;     /* elewacja budynku */
+  --dach:#B8312F;        /* czerwony dach */
+  --tekst:#1B2620;
+  --szary:#5A655F;
+  --tlo2:#EEF2F0;
+  --linia:#D9E0DC;
+  --kontener:min(92vw,1640px);
+  --serif:"Lora","Lora-fb",Georgia,serif;
+  --sans:"Manrope",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--tekst);font:400 17px/1.6 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;margin:0;letter-spacing:-.01em}
+p{margin:0 0 1em}
+.k{width:var(--kontener);margin:0 auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:52px;padding:0 26px;border-radius:0 26px 0 26px;background:var(--zielen);color:#fff;font:700 16px/1 var(--sans);text-decoration:none;border:0;cursor:pointer;transition:background .2s,transform .2s}
+.btn:hover{background:#1c4f33}
+.btn:active{transform:translateY(1px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-jasny{background:#fff;color:var(--zielen);box-shadow:inset 0 0 0 2px var(--zielen)}
+.btn-jasny:hover{background:var(--tlo2)}
+
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--linia)}
+.top .k{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.znak{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--zielen)}
+.znak svg{width:44px;height:36px;flex:none}
+.znak span{font-family:var(--serif);font-size:25px;font-weight:600;line-height:1;letter-spacing:-.01em}
+.znak small{display:block;font:600 11.5px/1.2 var(--sans);color:var(--szary);letter-spacing:.02em;margin-top:4px}
+.menu{display:flex;align-items:center;gap:30px}
+.menu a{text-decoration:none;font-weight:600;font-size:16px;color:var(--tekst);padding:6px 0;border-bottom:2px solid transparent}
+.menu a:hover{border-color:var(--limonka)}
+.menu a.akt{border-color:var(--zielen)}
+.menu .btn{color:#fff;min-height:44px;padding:0 20px;border:0}
+.burger{display:none;width:48px;height:48px;border:0;background:none;padding:12px;cursor:pointer;margin-right:-12px}
+.burger i{display:block;height:2px;background:var(--zielen);margin:6px 0;transition:transform .25s,opacity .2s}
+@media (max-width:900px){
+  .burger{display:block}
+  .menu{position:fixed;inset:72px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:#fff;padding:8px 4vw 24px;border-bottom:1px solid var(--linia);transform:translateY(-8px);opacity:0;visibility:hidden;transition:.2s}
+  .menu a{padding:15px 0;border-bottom:1px solid var(--linia);font-size:18px}
+  .menu .btn{margin-top:16px;min-height:52px;border:0}
+  .menu.otw{transform:none;opacity:1;visibility:visible}
+  .burger[aria-expanded=true] i:nth-child(1){transform:translateY(8px) rotate(45deg)}
+  .burger[aria-expanded=true] i:nth-child(2){opacity:0}
+  .burger[aria-expanded=true] i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+  .top .k{height:64px}
+  .menu{inset:64px 0 auto 0}
+  .znak span{font-size:22px}
+}
+
+/* pierwszy ekran */
+.hero{display:grid;grid-template-columns:44fr 56fr;min-height:calc(100svh - 72px);background:var(--zielen);color:#fff}
+.hero-txt{display:flex;flex-direction:column;justify-content:center;padding:clamp(40px,6vh,90px) clamp(28px,4.5vw,96px) clamp(40px,6vh,90px) max(4vw,calc((100vw - 1640px)/2));position:relative;overflow:hidden}
+.hero-txt>*{position:relative}
+.hero h1{font-size:clamp(34px,2.9vw,56px);max-width:14em}
+.hero .fala{width:min(260px,60%);height:auto;margin:22px 0 22px;color:var(--limonka)}
+.hero p.lead{font-size:clamp(17px,1.25vw,21px);color:#E4EEE7;max-width:34em;margin:0 0 30px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px 14px;align-items:center}
+.hero .btn{background:var(--limonka);color:var(--zielen-c)}
+.hero .btn:hover{background:#c8d05a}
+.hero .btn-obrys{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.55)}
+.hero .btn-obrys:hover{background:rgba(255,255,255,.1)}
+.hero-adres{margin-top:28px;font-size:15px;color:#CFE0D5}
+.hero-foto{position:relative;overflow:hidden;border-radius:0 0 0 clamp(60px,9vw,180px)}
+.hero-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.galazka-tlo{position:absolute;right:-60px;bottom:-40px;width:340px;opacity:.12;color:#fff;pointer-events:none}
+@media (max-width:959px){
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero-foto{order:-1;aspect-ratio:1/0.82;border-radius:0 0 0 72px}
+  .hero-txt{padding:26px 5vw 32px}
+  .hero h1{font-size:clamp(29px,8vw,40px)}
+  .hero .fala{margin:14px 0 14px;width:170px}
+  .hero p.lead{margin-bottom:22px;font-size:16.5px}
+  .hero-adres{margin-top:18px;font-size:14px}
+  .galazka-tlo{width:220px;right:-50px;bottom:-30px}
+  .hero-cta{flex-wrap:nowrap;gap:10px}
+  .hero .btn{min-height:50px;padding:0 18px;font-size:15.5px}
+  .hero .btn:first-child{flex:1 1 auto}
+}
+@media (max-width:959px) and (max-height:760px){
+  .hero-foto{aspect-ratio:1/0.5;border-radius:0 0 0 56px}
+  .hero-txt{padding:20px 5vw 26px}
+  .hero h1{font-size:27px}
+  .hero .fala{margin:10px 0 12px;width:140px}
+  .hero p.lead{font-size:15.5px;line-height:1.5;margin-bottom:18px}
+}
+
+/* sekcje */
+section{padding:clamp(64px,8vw,120px) 0}
+.szare{background:var(--tlo2)}
+.sek-nagl{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 6vw;align-items:end;margin-bottom:clamp(32px,4vw,56px)}
+.sek-nagl h2{font-size:clamp(30px,3vw,52px);max-width:19ch}
+.sek-nagl p{color:var(--szary);font-size:18px;max-width:38em;margin:0}
+@media (max-width:820px){.sek-nagl{grid-template-columns:1fr}}
+
+/* pas zdjec */
+.pas-wrap{position:relative;width:min(100vw - 2*clamp(16px,3vw,56px),1840px);margin:0 auto}
+.pas{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3*18px)/4);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab;overscroll-behavior-x:contain}
+.pas::-webkit-scrollbar{display:none}
+.pas.ciagnie{cursor:grabbing;scroll-snap-type:none}
+.pas figure{margin:0;scroll-snap-align:start}
+.pas button{all:unset;display:block;width:100%;cursor:zoom-in;overflow:hidden;border-radius:0 34px 0 34px}
+.pas img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .5s;-webkit-user-drag:none;user-select:none;background:var(--tlo2)}
+.pas button:hover img{transform:scale(1.03)}
+.pas figcaption{font-size:15px;color:var(--szary);margin-top:10px}
+.strz{display:flex;gap:10px;justify-content:flex-end;margin-top:20px}
+.strz button{width:52px;height:52px;border-radius:50%;border:2px solid var(--zielen);background:#fff;color:var(--zielen);cursor:pointer;display:grid;place-items:center}
+.strz button:disabled{opacity:.3;cursor:default}
+.strz svg{width:20px;height:20px}
+@media (max-width:1699px){.pas{grid-auto-columns:calc((100% - 2*18px)/3)}}
+@media (max-width:1279px){.pas{grid-auto-columns:calc((100% - 18px)/2.2)}}
+@media (max-width:767px){.pas{grid-auto-columns:84%;gap:12px}.pas-wrap{width:calc(100vw - 32px)}}
+
+.wyp{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 4vw;margin-top:clamp(40px,5vw,72px);padding-top:32px;border-top:1px solid var(--linia)}
+.wyp h3{font-size:22px;margin-bottom:12px;color:var(--zielen);display:flex;align-items:center;gap:10px}
+.wyp h3 svg{width:22px;height:22px;flex:none;color:var(--limonka)}
+.wyp ul{list-style:none;margin:0;padding:0}
+.wyp li{padding:7px 0;border-bottom:1px solid var(--linia);font-size:16px}
+@media (max-width:1100px){.wyp{grid-template-columns:1fr 1fr;gap:32px 6vw}}
+@media (max-width:600px){.wyp{gap:26px 18px}.wyp h3{font-size:19px}.wyp li{font-size:15px;padding:6px 0}}
+
+/* ceny */
+.ceny{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(28px,5vw,90px);align-items:start}
+.tab{width:100%;border-collapse:collapse;background:#fff;border-radius:0 34px 0 34px;overflow:hidden}
+.tab th,.tab td{padding:18px 20px;text-align:right;border-bottom:1px solid var(--linia)}
+.tab thead th{background:var(--zielen);color:#fff;font:700 15px/1.3 var(--sans)}
+.tab th[scope=row]{text-align:left;font:700 17px/1.3 var(--sans)}
+.tab th[scope=row] small{display:block;font-weight:500;color:var(--szary);font-size:14px;margin-top:4px}
+.tab td{font:600 21px/1 var(--serif);white-space:nowrap}
+.tab td small{font:600 14px var(--sans);color:var(--szary);margin-left:3px}
+.tab tbody tr:last-child th,.tab tbody tr:last-child td{border-bottom:0}
+.tab tr.wys td{color:var(--dach)}
+.ceny-info h3{font-size:26px;margin-bottom:14px}
+.ceny-info p{color:var(--szary)}
+.ceny-info .tel-duzy{display:inline-block;font:600 clamp(28px,2.4vw,38px)/1.1 var(--serif);color:var(--zielen);text-decoration:none;margin:4px 0 18px}
+@media (max-width:900px){.ceny{grid-template-columns:1fr}}
+@media (max-width:560px){
+  .tab th,.tab td{padding:13px 8px}
+  .tab thead th{font-size:13px}
+  .tab th[scope=row]{font-size:15px}
+  .tab th[scope=row] small{font-size:12.5px}
+  .tab td{font-size:17px}
+  .tab td small{display:none}
+}
+
+/* rodzina i pies */
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,96px);align-items:center}
+.duo-foto{display:grid;grid-template-columns:1.25fr 1fr;gap:14px}
+.duo-foto button{all:unset;cursor:zoom-in;display:block;overflow:hidden}
+.duo-foto img{width:100%;height:100%;object-fit:cover}
+.duo-foto button:first-child{border-radius:0 0 0 90px;aspect-ratio:3/4}
+.duo-foto button:last-child{border-radius:0 90px 0 0;aspect-ratio:3/4;align-self:end;margin-bottom:-40px}
+.duo h2{font-size:clamp(30px,3vw,50px);margin-bottom:20px;max-width:15ch}
+.duo p{font-size:18px;color:#36423B}
+.lista-l{list-style:none;padding:0;margin:26px 0 0}
+.lista-l li{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-top:1px solid var(--linia)}
+.lista-l svg{width:24px;height:20px;flex:none;margin-top:3px;color:var(--zielen)}
+@media (max-width:900px){.duo{grid-template-columns:1fr}.duo-foto button:last-child{margin-bottom:0}}
+
+/* okolica - ciemna sekcja */
+.ciemna{background:var(--zielen-c);color:#E6EFE9;position:relative;overflow:hidden}
+.ciemna h2{color:#fff}
+.ciemna .sek-nagl p{color:#C3D4C9}
+.fala-pas{display:block;width:100%;height:60px;color:var(--limonka);opacity:.9}
+.okol{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid rgba(255,255,255,.18)}
+.okol div{padding:30px 28px 10px 0;border-right:1px solid rgba(255,255,255,.12);margin-right:28px}
+.okol div:last-child{border-right:0;margin-right:0}
+.okol svg{display:block;width:30px;height:25px;color:var(--limonka);margin-bottom:16px}
+.okol h3{font:600 clamp(22px,1.6vw,27px)/1.2 var(--serif);color:#fff;margin-bottom:10px}
+.okol p{font-size:16px;color:#C3D4C9}
+@media (max-width:1000px){.okol{grid-template-columns:1fr 1fr}.okol div:nth-child(2){border-right:0;margin-right:0}}
+@media (max-width:560px){.okol{grid-template-columns:1fr}.okol div{border-right:0;margin-right:0;border-bottom:1px solid rgba(255,255,255,.12);padding:22px 0 8px}}
+
+/* kontakt */
+.kont{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(28px,5vw,90px)}
+.kont h2{font-size:clamp(30px,3vw,50px);margin-bottom:18px}
+.kont .dane{font-size:18px;line-height:1.7;margin:22px 0 28px}
+.kont .dane a{color:var(--zielen);font-weight:700;text-decoration:none}
+.mapa{margin-top:10px;aspect-ratio:16/10;background:var(--tlo2);border-radius:0 34px 0 34px;overflow:hidden;position:relative}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.mapa span{position:absolute;inset:0;display:grid;place-items:center;color:var(--szary);font-size:15px}
+form{align-self:start;background:var(--tlo2);padding:clamp(24px,3vw,44px);border-radius:0 44px 0 44px}
+form h3{font-size:26px;margin-bottom:6px}
+form>p{color:var(--szary);margin-bottom:22px}
+.pola{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pola .pel{grid-column:1/-1}
+label{display:block;font-weight:700;font-size:14px;margin-bottom:6px}
+input,select,textarea{width:100%;font:500 16px var(--sans);padding:14px;border:1px solid #C9D3CD;border-radius:4px;background:#fff;color:var(--tekst)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--zielen);outline-offset:1px;border-color:transparent}
+textarea{min-height:110px;resize:vertical}
+form .btn{margin-top:18px;width:100%}
+.ok{display:none;margin-top:14px;font-weight:600;color:var(--zielen)}
+@media (max-width:900px){.kont{grid-template-columns:1fr}}
+@media (max-width:340px){.pola{grid-template-columns:1fr}}
+
+/* stopka */
+footer{background:#fff;border-top:1px solid var(--linia);padding:36px 0 30px;font-size:15px;color:var(--szary)}
+footer .k{display:grid;grid-template-columns:1.4fr 1fr 1fr auto;gap:24px 40px;align-items:start}
+footer b{color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--zielen)}
+footer .dol{grid-column:1/-1;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:20px;border-top:1px solid var(--linia);font-size:14px}
+@media (max-width:820px){footer .k{grid-template-columns:1fr 1fr}footer .k>div:first-child{grid-column:1/-1}}
+
+/* pasek na telefonie */
+.dzwon{display:none}
+@media (max-width:767px){
+  .dzwon{display:flex;position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:40;transform:translateY(140%);transition:transform .3s}
+  .dzwon.widac{transform:none}
+  .dzwon .btn{flex:1;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+  footer{padding-bottom:96px}
+}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(10,20,14,.94);display:none;align-items:center;justify-content:center}
+.lb.otw{display:flex}
+.lb img{max-width:94vw;max-height:84vh;width:auto;height:auto;object-fit:contain}
+.lb p{position:absolute;left:0;right:0;bottom:18px;text-align:center;color:#dfe8e2;font-size:15px;margin:0}
+.lb button{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;width:52px;height:52px;border-radius:50%;cursor:pointer;display:grid;place-items:center}
+.lb button svg{width:22px;height:22px}
+.lb .z{top:16px;right:16px}
+.lb .p{left:16px;top:50%;margin-top:-26px}
+.lb .n{right:16px;top:50%;margin-top:-26px}
+
+/* znak wykonawcy */
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- galazka oliwna jak na elewacji: lodyzka, liscie, owoc -->
+    <symbol id="galazka" viewBox="0 0 120 100">
+      <path d="M8 92C34 70 62 46 112 10" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      <path d="M40 66c-14-4-24-14-26-28 14 2 24 12 26 28z" fill="currentColor"/>
+      <path d="M58 52c-3-15 3-29 15-36 3 14-3 28-15 36z" fill="currentColor"/>
+      <path d="M70 40c13-8 28-8 40 0-13 8-28 8-40 0z" fill="currentColor"/>
+      <path d="M86 28c-2-11 3-20 12-25 2 11-3 20-12 25z" fill="currentColor"/>
+      <ellipse cx="50" cy="78" rx="11" ry="15" transform="rotate(-38 50 78)" fill="currentColor" opacity=".7"/>
+    </symbol>
+    <symbol id="lisc" viewBox="0 0 24 20">
+      <path d="M2 18C6 6 14 2 22 2 20 11 12 17 2 18z" fill="currentColor"/>
+      <path d="M2 18C8 12 13 8 18 5" stroke="#fff" stroke-width="1.3" fill="none" opacity=".7"/>
+    </symbol>
+    <!-- ogonek litery k z napisu "oliwka", tu jako fala Baltyku -->
+    <symbol id="fala" viewBox="0 0 260 28">
+      <path d="M2 18C34 4 58 4 86 14S140 26 170 14 228 2 258 10" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="tel" viewBox="0 0 24 24"><path d="M6.6 3.5l2.6 3.1c.4.5.4 1.2 0 1.7L7.8 10c1.3 2.6 3.6 4.9 6.2 6.2l1.7-1.4c.5-.4 1.2-.4 1.7 0l3.1 2.6c.5.4.6 1.2.1 1.7l-1.5 1.8c-.5.6-1.3.9-2.1.7C10.4 20.2 3.8 13.6 2.4 7c-.2-.8.1-1.6.7-2.1l1.8-1.5c.5-.4 1.3-.4 1.7.1z" fill="currentColor"/></symbol>
+    <symbol id="lewo" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="prawo" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="k">
+    <a class="znak" href="#" aria-label="Willa Oliwka - strona główna">
+      <svg aria-hidden="true" style="color:var(--zielen)"><use href="#galazka"/></svg>
+      <div><span>Willa Oliwka</span><small>pensjonat w Chłapowie</small></div>
+    </a>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+    <nav class="menu" id="menu">
+      <a href="#pokoje">Pokoje</a>
+      <a href="#ceny">Ceny 2026</a>
+      <a href="#rodziny">Rodziny i psy</a>
+      <a href="#okolica">Okolica</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="btn" href="tel:+48532552626"><svg aria-hidden="true"><use href="#tel"/></svg>532 552 626</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="padding:0">
+  <div class="hero-txt">
+    <svg class="galazka-tlo" viewBox="0 0 120 100" aria-hidden="true"><use href="#galazka"/></svg>
+    <h1>Pensjonat w&nbsp;Chłapowie, 250&nbsp;metrów od&nbsp;morza</h1>
+    <svg class="fala" viewBox="0 0 260 28" aria-hidden="true"><use href="#fala"/></svg>
+    <p class="lead">Pokoje 2, 3 i 4-osobowe z łazienkami i balkonem lub tarasem. Cicha okolica nad klifowym wybrzeżem, tuż obok Jaru Chłapowskiego.</p>
+    <div class="hero-cta">
+      <a class="btn" href="tel:+48532552626"><svg aria-hidden="true"><use href="#tel"/></svg>Zadzwoń i zarezerwuj</a>
+      <a class="btn btn-obrys" href="#ceny">Cennik</a>
+    </div>
+    <p class="hero-adres">ul. Jarowa 8, 84-120 Chłapowo k. Władysławowa</p>
+  </div>
+  <div class="hero-foto">
+    <img src="img/dom-1400.webp" srcset="img/dom-600.webp 600w, img/dom-900.webp 900w, img/dom-1400.webp 1400w, img/dom-2000.webp 2000w" sizes="(min-width:960px) 56vw, 100vw" width="2000" height="2000" alt="Willa Oliwka w Chłapowie - budynek pensjonatu z napisem i gałązką oliwną na elewacji" fetchpriority="high">
+  </div>
+</section>
+
+<section id="pokoje">
+  <div class="k sek-nagl">
+    <h2>Jasne pokoje z balkonem albo tarasem</h2>
+    <p>Pokoje 2-, 3- i 4-osobowe, każdy z własną łazienką z kabiną prysznicową. Na parterze pokoje mają osobne wejście z zewnątrz i wyjście prosto do ogrodu.</p>
+  </div>
+  <div class="pas-wrap">
+    <div class="pas" id="pas" tabindex="0" aria-label="Zdjęcia pokoi, przesuń w bok">
+      <figure><button data-lb="img/pokoj1-1536.webp" aria-label="Powiększ: pokój z dużym łóżkiem"><img src="img/pokoj1-800.webp" width="800" height="533" alt="Pokój z dużym łóżkiem i wyjściem na taras" loading="lazy"></button><figcaption>Pokój z wyjściem na taras</figcaption></figure>
+      <figure><button data-lb="img/pokoj3-1536.webp" aria-label="Powiększ: pokój z balkonem"><img src="img/pokoj3-800.webp" width="800" height="533" alt="Pokój z sofą, stolikiem i balkonem" loading="lazy"></button><figcaption>Pokój z balkonem</figcaption></figure>
+      <figure><button data-lb="img/pokoj2-1536.webp" aria-label="Powiększ: pokój trzyosobowy"><img src="img/pokoj2-800.webp" width="800" height="533" alt="Pokój z trzema łóżkami i stolikiem" loading="lazy"></button><figcaption>Pokój dla trzech osób</figcaption></figure>
+      <figure><button data-lb="img/pokoj4-1536.webp" aria-label="Powiększ: pokój czteroosobowy"><img src="img/pokoj4-800.webp" width="800" height="533" alt="Pokój z rozkładaną sofą, łóżkiem i stołem" loading="lazy"></button><figcaption>Pokój rodzinny</figcaption></figure>
+      <figure><button data-lb="img/balkon-1536.webp" aria-label="Powiększ: balkon"><img src="img/balkon-800.webp" width="800" height="533" alt="Balkon z krzesłami i widokiem na okolicę" loading="lazy"></button><figcaption>Balkon</figcaption></figure>
+      <figure><button data-lb="img/pokoj5-1536.webp" aria-label="Powiększ: pokój dwuosobowy"><img src="img/pokoj5-800.webp" width="800" height="533" alt="Pokój z dwoma łóżkami i stolikiem z tulipanami" loading="lazy"></button><figcaption>Pokój z dwoma łóżkami</figcaption></figure>
+      <figure><button data-lb="img/lazienka-1600.webp" aria-label="Powiększ: łazienka"><img src="img/lazienka-800.webp" width="800" height="1216" alt="Łazienka z kabiną prysznicową" loading="lazy" style="object-position:50% 60%"></button><figcaption>Łazienka w każdym pokoju</figcaption></figure>
+      <figure><button data-lb="img/parter-1536.webp" aria-label="Powiększ: tarasy na parterze"><img src="img/parter-800.webp" width="800" height="533" alt="Tarasy pokoi na parterze z wyjściem do ogrodu" loading="lazy"></button><figcaption>Tarasy pokoi na parterze</figcaption></figure>
+    </div>
+    <div class="strz"><button id="pw" aria-label="Poprzednie zdjęcia"><svg><use href="#lewo"/></svg></button><button id="nx" aria-label="Następne zdjęcia"><svg><use href="#prawo"/></svg></button></div>
+  </div>
+  <div class="k wyp">
+    <div><h3><svg aria-hidden="true"><use href="#lisc"/></svg>W pokoju</h3><ul><li>wygodne łóżka i szafki</li><li>telewizor i radio</li><li>lodówka i czajnik</li><li>podstawowe naczynia</li></ul></div>
+    <div><h3><svg aria-hidden="true"><use href="#lisc"/></svg>Na plażę</h3><ul><li>parawan</li><li>koc plażowy</li><li>leżak plażowy</li><li>balkon lub taras do suszenia</li></ul></div>
+    <div><h3><svg aria-hidden="true"><use href="#lisc"/></svg>Aneks kuchenny</h3><ul><li>płyta indukcyjna</li><li>kuchenka mikrofalowa</li><li>naczynia i sztućce</li><li>do dyspozycji wszystkich gości</li></ul></div>
+    <div><h3><svg aria-hidden="true"><use href="#lisc"/></svg>Na miejscu</h3><ul><li>parking dla gości</li><li>ogrodzony teren</li><li>brama zamykana na noc</li><li>mały plac zabaw</li></ul></div>
+  </div>
+</section>
+
+<section id="ceny" class="szare">
+  <div class="k sek-nagl">
+    <h2>Ceny na sezon 2026</h2>
+    <p>Cena za pokój, zależnie od terminu i liczby osób. Do ceny pobytu doliczana jest obowiązująca opłata klimatyczna.</p>
+  </div>
+  <div class="k ceny">
+    <table class="tab">
+      <thead><tr><th scope="col" style="text-align:left">Termin</th><th scope="col">Pokój 2-os.</th><th scope="col">3-os.</th><th scope="col">4-os.</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Sezon niski<small>04.05-28.05 i 31.08-30.09</small></th><td>120<small>zł</small></td><td>140<small>zł</small></td><td>160<small>zł</small></td></tr>
+        <tr><th scope="row">Sezon średni<small>01.05-03.05 i 29.05-18.07</small></th><td>140<small>zł</small></td><td>170<small>zł</small></td><td>200<small>zł</small></td></tr>
+        <tr class="wys"><th scope="row">Sezon wysoki<small>19.07-22.08</small></th><td>210<small>zł</small></td><td>240<small>zł</small></td><td>270<small>zł</small></td></tr>
+        <tr><th scope="row">Koniec sierpnia<small>23.08-30.08</small></th><td>150<small>zł</small></td><td>170<small>zł</small></td><td>210<small>zł</small></td></tr>
+      </tbody>
+    </table>
+    <div class="ceny-info">
+      <h3>Jak zarezerwować</h3>
+      <p>Rezerwacje przyjmujemy telefonicznie. Ustalamy termin i pokój, a potem wystarczy wpłacić uzgodnioną zaliczkę na konto.</p>
+      <a class="tel-duzy" href="tel:+48532552626">+48 532 552 626</a>
+      <p>Wolą Państwo napisać? Proszę wysłać wiadomość na <a href="mailto:oliwka.willa@gmail.com" style="color:var(--zielen);font-weight:700">oliwka.willa@gmail.com</a> albo skorzystać z formularza na dole strony.</p>
+    </div>
+  </div>
+</section>
+
+<section id="rodziny">
+  <div class="k duo">
+    <div class="duo-foto">
+      <button data-lb="img/taras-1600.webp" aria-label="Powiększ: tarasy na parterze"><img src="img/taras-800.webp" width="800" height="532" alt="Tarasy pokoi na parterze z krzesłami i stolikami" loading="lazy"></button>
+      <button data-lb="img/front-1600.webp" aria-label="Powiększ: budynek od frontu"><img src="img/front-800.webp" width="800" height="800" alt="Front budynku Willi Oliwka z balkonami i ogrodem" loading="lazy"></button>
+    </div>
+    <div>
+      <h2>Wygodnie dla rodzin z dziećmi i dla psów</h2>
+      <p>Budynek ma trzy kondygnacje. Pokoje na parterze mają bezpośrednie wejście z zewnątrz, więc nie trzeba nosić wózka ani bagaży po schodach, a z tarasu wychodzi się prosto do ogrodu.</p>
+      <ul class="lista-l">
+        <li><svg aria-hidden="true"><use href="#lisc"/></svg><span>Teren ogrodzony, brama wjazdowa zamykana na noc, parking na miejscu.</span></li>
+        <li><svg aria-hidden="true"><use href="#lisc"/></svg><span>Mały plac zabaw dla dzieci przy budynku.</span></li>
+        <li><svg aria-hidden="true"><use href="#lisc"/></svg><span>Pensjonat przyjazny zwierzętom. Nie trzeba zostawiać psa w domu, wystarczy wcześniej ustalić z nami szczegóły pobytu.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="okolica" class="ciemna">
+  <div class="k sek-nagl">
+    <h2>Morze, klif i Jar Chłapowski za rogiem</h2>
+    <p>Chłapowo leży tuż obok Władysławowa, na skraju Nadmorskiego Parku Krajobrazowego. Z dala od zgiełku, a wszystko, czego trzeba na wakacjach, jest blisko.</p>
+  </div>
+  <div class="k okol">
+    <div><svg aria-hidden="true"><use href="#lisc"/></svg><h3>250 m do morza</h3><p>Szeroka, czysta plaża pod klifowym wybrzeżem, na spacer i na cały dzień z parawanem.</p></div>
+    <div><svg aria-hidden="true"><use href="#lisc"/></svg><h3>Jar Chłapowski obok</h3><p>Piękny wąwóz w bezpośrednim sąsiedztwie, idealny na spacery i kontakt z naturą.</p></div>
+    <div><svg aria-hidden="true"><use href="#lisc"/></svg><h3>Nadmorski Park Krajobrazowy</h3><p>Chroniona przyroda, bogata flora i fauna nadmorskich lasów i wydm.</p></div>
+    <div><svg aria-hidden="true"><use href="#lisc"/></svg><h3>Bary, rowery, place zabaw</h3><p>W pobliżu jadłodajnie, place zabaw, wypożyczalnia rowerów i wiele innych atrakcji.</p></div>
+  </div>
+  <svg class="fala-pas" viewBox="0 0 260 28" preserveAspectRatio="none" aria-hidden="true" style="margin:40px 0 -30px"><use href="#fala"/></svg>
+</section>
+
+<section id="kontakt">
+  <div class="k kont">
+    <div>
+      <h2>Zapraszamy do Chłapowa</h2>
+      <p style="color:var(--szary);font-size:18px">W razie pytań najszybciej porozmawiamy przez telefon. Aktualności publikujemy też na Facebooku.</p>
+      <div class="dane">
+        <b>Willa Oliwka</b><br>
+        ul. Jarowa 8, 84-120 Chłapowo k. Władysławowa<br>
+        tel. <a href="tel:+48532552626">+48 532 552 626</a><br>
+        e-mail: <a href="mailto:oliwka.willa@gmail.com">oliwka.willa@gmail.com</a><br>
+        <a href="https://www.facebook.com/p/Willa-Oliwka-100057340454916/" rel="noopener" target="_blank">Willa Oliwka na Facebooku</a>
+      </div>
+      <div class="mapa" id="mapa" data-src="https://www.google.com/maps?q=Jarowa+8,+84-120+Ch%C5%82apowo&amp;z=15&amp;output=embed"><span>Mapa dojazdu</span></div>
+    </div>
+    <form id="form" novalidate>
+      <h3>Zapytaj o wolny termin</h3>
+      <p>Odpowiemy mailem albo oddzwonimy.</p>
+      <div class="pola">
+        <div><label for="f1">Przyjazd</label><input id="f1" type="date"></div>
+        <div><label for="f2">Wyjazd</label><input id="f2" type="date"></div>
+        <div><label for="f3">Liczba osób</label><select id="f3"><option>2 osoby</option><option>3 osoby</option><option>4 osoby</option><option>więcej</option></select></div>
+        <div><label for="f4">Z psem?</label><select id="f4"><option>nie</option><option>tak</option></select></div>
+        <div class="pel"><label for="f5">Imię i telefon lub e-mail</label><input id="f5" type="text" autocomplete="name"></div>
+        <div class="pel"><label for="f6">Wiadomość</label><textarea id="f6"></textarea></div>
+      </div>
+      <button class="btn" type="submit">Wyślij zapytanie</button>
+      <p class="ok" id="ok">Dziękujemy, odezwiemy się najszybciej, jak to możliwe.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="k">
+    <div><b>Willa Oliwka</b><br>Pensjonat w Chłapowie, 250 m od morza.<br>ul. Jarowa 8, 84-120 Chłapowo</div>
+    <div><b>Kontakt</b><br><a href="tel:+48532552626">+48 532 552 626</a><br><a href="mailto:oliwka.willa@gmail.com">oliwka.willa@gmail.com</a></div>
+    <div><b>Na stronie</b><br><a href="#pokoje">Pokoje</a> · <a href="#ceny">Ceny 2026</a><br><a href="#okolica">Okolica</a> · <a href="#kontakt">Kontakt</a></div>
+    <div></div>
+    <div class="dol">
+      <span>© <span id="rok">2026</span> Willa Oliwka</span>
+      <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=willaoliwka.com&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+    </div>
+  </div>
+</footer>
+
+<div class="dzwon" id="dzwon"><a class="btn" href="tel:+48532552626"><svg aria-hidden="true"><use href="#tel"/></svg>Zadzwoń: 532 552 626</a></div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
+  <img id="lbimg" alt="">
+  <p id="lbp"></p>
+  <button class="z" id="lbz" aria-label="Zamknij"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+  <button class="p" id="lbl" aria-label="Poprzednie"><svg><use href="#lewo"/></svg></button>
+  <button class="n" id="lbn" aria-label="Następne"><svg><use href="#prawo"/></svg></button>
+</div>
+
+<script>
+(function(){
+  document.getElementById('rok').textContent=new Date().getFullYear();
+  // menu
+  var b=document.querySelector('.burger'),m=document.getElementById('menu');
+  b.addEventListener('click',function(){var o=m.classList.toggle('otw');b.setAttribute('aria-expanded',o)});
+  m.addEventListener('click',function(e){if(e.target.closest('a')){m.classList.remove('otw');b.setAttribute('aria-expanded','false')}});
+  // aktywna pozycja menu
+  var linki=[].slice.call(m.querySelectorAll('a[href^="#"]'));
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){linki.forEach(function(a){a.classList.toggle('akt',a.getAttribute('href')=='#'+x.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+  ['pokoje','ceny','rodziny','okolica','kontakt'].forEach(function(id){io.observe(document.getElementById(id))});
+  // pas zdjec: przeciaganie mysza i strzalki
+  var pas=document.getElementById('pas'),pw=document.getElementById('pw'),nx=document.getElementById('nx');
+  function krok(){var f=pas.querySelector('figure');return f.getBoundingClientRect().width+18}
+  pw.onclick=function(){pas.scrollBy({left:-krok(),behavior:'smooth'})};
+  nx.onclick=function(){pas.scrollBy({left:krok(),behavior:'smooth'})};
+  function stan(){pw.disabled=pas.scrollLeft<4;nx.disabled=pas.scrollLeft+pas.clientWidth>pas.scrollWidth-4}
+  pas.addEventListener('scroll',stan,{passive:true});window.addEventListener('resize',stan);stan();
+  var x0=0,s0=0,ciag=false,ruch=0;
+  pas.addEventListener('pointerdown',function(e){if(e.pointerType!='mouse')return;ciag=true;ruch=0;x0=e.clientX;s0=pas.scrollLeft;pas.classList.add('ciagnie')});
+  window.addEventListener('pointermove',function(e){if(!ciag)return;ruch=Math.abs(e.clientX-x0);pas.scrollLeft=s0-(e.clientX-x0)});
+  window.addEventListener('pointerup',function(){if(!ciag)return;ciag=false;pas.classList.remove('ciagnie')});
+  pas.addEventListener('click',function(e){if(ruch>6){e.preventDefault();e.stopPropagation();ruch=0}},true);
+  // lightbox
+  var lb=document.getElementById('lb'),li=document.getElementById('lbimg'),lp=document.getElementById('lbp');
+  var el=[].slice.call(document.querySelectorAll('[data-lb]')),i=0;
+  function pokaz(n){i=(n+el.length)%el.length;var t=el[i],im=t.querySelector('img');li.src=im.currentSrc||im.src;li.alt=im.alt;lp.textContent=im.alt+'  ('+(i+1)+'/'+el.length+')';var duzy=new Image();duzy.onload=function(){if(el[i]===t)li.src=duzy.src};setTimeout(function(){duzy.src=t.getAttribute('data-lb')},150)}
+  el.forEach(function(t,n){t.addEventListener('click',function(){pokaz(n);lb.classList.add('otw');document.body.style.overflow='hidden'})});
+  function zamknij(){lb.classList.remove('otw');document.body.style.overflow=''}
+  document.getElementById('lbz').onclick=zamknij;
+  document.getElementById('lbl').onclick=function(){pokaz(i-1)};
+  document.getElementById('lbn').onclick=function(){pokaz(i+1)};
+  lb.addEventListener('click',function(e){if(e.target===lb)zamknij()});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('otw'))return;if(e.key=='Escape')zamknij();if(e.key=='ArrowLeft')pokaz(i-1);if(e.key=='ArrowRight')pokaz(i+1)});
+  var sx=0;lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
+  lb.addEventListener('touchend',function(e){var d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>50)pokaz(i+(d<0?1:-1))});
+  // mapa po przewinieciu
+  var mapa=document.getElementById('mapa');
+  new IntersectionObserver(function(en,o){if(en[0].isIntersecting){var f=document.createElement('iframe');f.src=mapa.getAttribute('data-src');f.title='Mapa dojazdu do Willi Oliwka';f.loading='lazy';f.referrerPolicy='no-referrer-when-downgrade';mapa.appendChild(f);o.disconnect()}},{rootMargin:'300px'}).observe(mapa);
+  // pasek "zadzwon" na telefonie
+  var dz=document.getElementById('dzwon'),hero=document.querySelector('.hero');
+  new IntersectionObserver(function(en){dz.classList.toggle('widac',!en[0].isIntersecting)}).observe(hero);
+  // formularz pokazowy
+  document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('ok').style.display='block'});
+})();
+</script>
+</body>
+</html>
