@@ -208,15 +208,15 @@ section{padding:clamp(64px,8vw,120px) 0}
 form{align-self:start;background:var(--tlo2);padding:clamp(24px,3vw,44px);border-radius:0 44px 0 44px}
 form h3{font-size:26px;margin-bottom:6px}
 form>p{color:var(--szary);margin-bottom:22px}
-.pola{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pola{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
 .pola .pel{grid-column:1/-1}
 label{display:block;font-weight:700;font-size:14px;margin-bottom:6px}
-input,select,textarea{width:100%;font:500 16px var(--sans);padding:14px;border:1px solid #C9D3CD;border-radius:4px;background:#fff;color:var(--tekst)}
+input,select,textarea{width:100%;min-width:0;font:500 16px var(--sans);padding:14px;border:1px solid #C9D3CD;border-radius:4px;background:#fff;color:var(--tekst)}
 input:focus,select:focus,textarea:focus{outline:2px solid var(--zielen);outline-offset:1px;border-color:transparent}
 textarea{min-height:110px;resize:vertical}
 form .btn{margin-top:18px;width:100%}
 .ok{display:none;margin-top:14px;font-weight:600;color:var(--zielen)}
-@media (max-width:900px){.kont{grid-template-columns:1fr}}
+@media (max-width:900px){.kont{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:340px){.pola{grid-template-columns:1fr}}
 
 /* stopka */
